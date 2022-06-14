@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <form action="codigo.php" method="post">
+
+        <label for="nombre">Nombre</label>
+        <input placeholder="Juan Rodriguez" id="nombre" type="text" name="nombre">
+
+        <label for="paisMenu">Paises</label>
+
+        <select required name="pais" id="paisMenu">
+            <option value="">Elegir</option>
+            <option value="argentina">Argentina</option>
+            <option value="uruguay">Uruguay</option>
+            <option value="brasil">Brasil</option>
+        </select>
+
+        <label for="paisGusto">Paises que me gustan</label>
+
+        <select multiple required name="paisGustos" id="paisGusto">
+            <option value="">Elegir</option>
+            <option value="argentina">Argentina</option>
+            <option value="uruguay">Uruguay</option>
+            <option value="brasil">Brasil</option>
+        </select>
+
+
+
+
+<label>Estado Civil</label>
+<label>Casado <input name="estado" value="casado" type="radio"></label>
+<label>Soltero<input name="estado" value="soltero" type="radio"></label>
+
+<label>Hobbies</label>
+
+
+<label>Deportes <input name="intereses" value="deportes" type="checkbox" ></label>
+<label>Viajes <input name="intereses" value="viajes" type="checkbox" ></label>
+<label>Indumentaria <input name="intereses" value="indumentaria" type="checkbox" ></label>
+
+        <button>Enviar</button>
+
+
+
+    </form>
+
+
+</body>
+
+</html>
